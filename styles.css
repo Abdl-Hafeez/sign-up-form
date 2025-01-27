@@ -19,12 +19,19 @@ body {
     align-items: center;
 }
 
-.hero, main {
-    min-height: 100vh;
+.hero-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
+
 .hero {
     position: relative;
     width: 40%;
+    height: 100%;
 }
 
 .hero::after {
@@ -75,7 +82,10 @@ body {
 }
 main {
     width: 60%;
+    min-height: 100vh;
+    padding-bottom: 2rem;
     background-color: #003d5b;
+    margin-left: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
