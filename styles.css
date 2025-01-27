@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: norseBold;
+    src: url(Norse-Bold.otf);
+    font-weight: 900;
+}
+
+body {
+    color: #eeeef5;
+    font-family: "Montserrat", serif;
+    display: flex;
+    align-items: center;
+}
+
+.hero, main {
+    height: 100vh;
+    padding: 2rem;
+}
+.hero {
+    position: relative;
+    width: 40%;
+}
+
+.hero::after {
+    content: "";
+    background: url(images/annie-spratt-MChSQHxGZrQ-unsplash.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.hero h1 {
+    font-family: norseBold;
+    font-size: calc(2rem + 1vw);
+    background-image: linear-gradient(90deg, #0466c8 20%, #0353a4 40%, #023e7d 60%, #002855 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .logo-and-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.material-symbols-outlined {
+    color: #69041a;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .photo_credit {
+    font-weight: 400;
+    position: absolute;  
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.hero a{
+    color: #04283d;
+}
+main {
+    width: 60%;
+    background-color: #003d5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.intro {
+    width: max(400px, 70%);
+    padding: 1rem 0;
+}
+
+.intro h1 {
+    font-size: 1.5rem;
+    font-family: "Lexend Giga";
+    padding: 1rem;
+}
+
+.intro p {
+    line-height: 1.5;
+}
+
+.sign-up {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+}
+
+.sign-up div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input:not([type="submit"]) {
+    width: 230px;
+    padding: 0.2rem;
+    border: 1px solid #776d6d;
+    border-radius: 5px;
+    outline: none;
+} 
+
+/* input:invalid {
+    border: 2px solid #b80f1d;
+} */
+
+input:focus {
+    border: 1px solid #094fe7;
+}
+
+.sign-up input[type="submit"] {
+    background-color: #0307f1;
+    width: 100px;
+    color: #eeeef5;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+} 
+
+main .login > a {
+    text-decoration: none;
+    color: #ece2e4;
+    font-weight: 600;
+    padding: 10px;
+}

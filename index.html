@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=developer_mode_tv" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="logo-and-name">
+            <span class="material-symbols-outlined">
+                developer_mode_tv
+            </span>
+            <h1>SkillSync</h1>
+        </div>
+        
+        <p class="photo_credit">Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/men-sitting-in-front-of-their-laptop-computer-MChSQHxGZrQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </p>
+    </div>
+    <main>
+        <div class="intro">
+            <h1>Welcome to <span class="colorful">SkillSync!</span></h1>
+            <p>
+                Ready to take your skills to the next level? Whether you're looking to learn, share, or grow, <span class="colorful">SkillSync</span> is here to help you connect with like-minded individuals and experienced mentors. <br>
+                Join our vibrant community of learners and experts, where collaboration and knowledge-sharing are at the heart of everything we do.
+                Sync your skills amplify your potential! <br>
+            </p>
+       </div>
+    
+       <form class="sign-up" action="" method="post">
+        <div class="first-name">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" required placeholder="John">
+        </div>
+        <div class="last-name">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" required placeholder="Doe">
+        </div>
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        </div>
+        <div class="phone-number">
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="" pattern="[0-9]{3}[0-9]{4}[0-9]{3}">
+        </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="confirm">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Sign Up" name="submit">
+        </div>
+       </form>
+       <p class="login">Already have an account?<a href="">Log in</a></p>
+    </main>
+</body>
+</html>
